@@ -28,7 +28,31 @@ export class Cezar extends EncryptionMethod {
         super('Cezar', alphabet[alphabet_lang]);
     }
 
-    encrypt(data) {}
+    encrypt(data, shift) {
+        let result = '';
 
-    decrypt(data) {}
+        for (const char of data) {
+            let charIndex = this.alphabet.indexOf(char.toUpperCase());
+            
+            result += charIndex !== -1
+                ? this.alphabet[charIndex + shift]
+                : '';
+        }
+
+        return result;
+    }
+
+    decrypt(data, shift) {
+        let result = '';
+        
+        for (const char of data) {
+            let charIndex = this.alphabet.indexOf(char.toUpperCase());
+            
+            result += charIndex !== -1
+                ? this.alphabet[charIndex - shift]
+                : '';
+        }
+
+        return result;
+    }
 }
