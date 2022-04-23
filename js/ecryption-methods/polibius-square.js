@@ -1,6 +1,6 @@
 import { EncryptionMethod } from './encryption-base.js';
 
-export class PolybiusSquare extends EncryptionMethod {
+export class Polybius extends EncryptionMethod {
     constructor(alphabet_lang) {
         const alphabet = {
             en: [
@@ -23,7 +23,7 @@ export class PolybiusSquare extends EncryptionMethod {
             ],
         }
 
-        super('Polybius square', alphabet[alphabet_lang]);
+        super('Polybius', alphabet[alphabet_lang]);
     }
 
     encrypt(data) {

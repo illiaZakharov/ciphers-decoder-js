@@ -28,7 +28,9 @@ export class Cezar extends EncryptionMethod {
         super('Cezar', alphabet[alphabet_lang]);
     }
 
-    encrypt(data, shift) {
+    encrypt(data, shift = 3) {
+        if (!data) return '';
+
         let result = '';
 
         for (const char of data) {
@@ -42,7 +44,9 @@ export class Cezar extends EncryptionMethod {
         return result;
     }
 
-    decrypt(data, shift) {
+    decrypt(data, shift = 3) {
+        if (!data) return '';
+        
         let result = '';
         
         for (const char of data) {
