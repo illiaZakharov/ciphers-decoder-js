@@ -1,0 +1,32 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: $black;
+
+    &__container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: $green;
+
+    &:active {
+        opacity: 0.7;
+    }
+
+    &__image {
+        height: 50px;
+        border: 1px solid $green;
+        margin-right: 10px;
+    }
+
+    &__title {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

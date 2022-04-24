@@ -1,0 +1,19 @@
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        padding: 8px 10px;
+        background-color: #505050;
+        color: #0f0;
+        border: 1px solid #000;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    button:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+}

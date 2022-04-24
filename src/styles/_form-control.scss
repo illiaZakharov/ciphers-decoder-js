@@ -1,0 +1,34 @@
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__label {
+        margin-bottom: 5px;
+        color: $green;
+    }
+
+    &__input {
+        resize: vertical;
+    }
+
+    &__selector{
+        cursor: pointer;
+    }
+
+    &__selector,
+    &__input {
+        padding: 5px;
+        border: 1px solid $black;
+        border-radius: 3px;
+        background-color: $light-grey;
+        color: $white;
+        outline-color: $green;
+    }
+
+    &__selector:focus,
+    &__input:focus {
+        border-color: $green;
+    }
+}
+

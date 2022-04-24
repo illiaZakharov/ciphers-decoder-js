@@ -4,7 +4,7 @@ import { Vizhener } from './ecryption-methods/vizhener-square.js';
 
 import { APP_CONFIG as config} from './config/app.js';
 
-import '../styles/style.css';
+import '@styles/style.scss';
 
 const logoImg = document.getElementById('logo-img');
 const logoTitle = document.getElementById('logo-title');
@@ -34,7 +34,8 @@ const langSelector = document.getElementById('alphabet-lang');
 
 const inputData = document.getElementById('input-data');
 inputData.addEventListener('input', function () {
-    this.value ? enableBtns() : disableBtns();
+    // uncooment when will be ready
+    // this.value ? enableBtns() : disableBtns();
 });
 
 /**** [START] BUTTONS ****/
