@@ -10,10 +10,17 @@ Install dependencies using the package manager.
 ```bash
 npm install 
 ```
-
-Run build
+#### Run application
 ```bash
-npm run build 
+npm run start
+```
+#### Build
+```bash
+npm run build
+```
+#### Dev
+```bash
+npm run dev
 ```
 ## Usage
 
