@@ -2,6 +2,8 @@ import { Cezar } from './ecryption-methods/cezar.js';
 import { Polybius } from './ecryption-methods/polibius-square.js';
 import { Vizhener } from './ecryption-methods/vizhener-square.js';
 
+import '../styles/style.css';
+
 const CIPHERS = {
     vizhener: {
         init: (lang) => new Vizhener(lang),

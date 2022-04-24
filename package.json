@@ -1,0 +1,45 @@
+{
+  "name": "ciphers-decoder",
+  "version": "1.0.0",
+  "description": "This application designed to decrypt and encrypt some ciphers",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "ecmascript",
+    "webpack",
+    "cipher",
+    "encryption",
+    "decryption",
+    "cezar",
+    "vizhener",
+    "polybius"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illiaZakharov/ciphers-decoder.git"
+  },
+  "author": "Illia <ilya.3axapov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/illiaZakharov/ciphers-decoder/issues"
+  },
+  "homepage": "https://github.com/illiaZakharov/ciphers-decoder#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
