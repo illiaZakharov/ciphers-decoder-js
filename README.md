@@ -4,32 +4,16 @@ Ciphers decoder is a JavaScript application for encrypting and decrypting text w
 
 ## Installation and Start
 
-0. Install the package manager (if not already installed). 
+Install the package manager (if not already installed). For example [node.js](https://nodejs.org/en/).
 
-1. Install dependencies using the package manager.
-
-For node.js:
-
+Install dependencies using the package manager.
 ```bash
 npm install 
 ```
 
-For yarn:
-
-```bash
-yarn install 
-```
-
-2. Run build
-
+Run build
 ```bash
 npm run build 
-```
-
-or
-
-```bash
-yarn run build 
 ```
 ## Usage
 
