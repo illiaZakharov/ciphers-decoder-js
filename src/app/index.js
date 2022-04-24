@@ -2,7 +2,17 @@ import { Cezar } from './ecryption-methods/cezar.js';
 import { Polybius } from './ecryption-methods/polibius-square.js';
 import { Vizhener } from './ecryption-methods/vizhener-square.js';
 
+import { APP_CONFIG as config} from './config/app.js';
+
 import '../styles/style.css';
+
+const logoImg = document.getElementById('logo-img');
+const logoTitle = document.getElementById('logo-title');
+
+logoImg.src = config.logo.src;
+logoImg.alt = config.logo.alt;
+
+logoTitle.textContent = config.title;
 
 const CIPHERS = {
     vizhener: {

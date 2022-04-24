@@ -5,15 +5,46 @@
 }
 
 body {
-    background: #f4f4f4;
-    color: #666;
+    background: #232323;
+    color: #0f0;
 }
 
 .container {
     width: 90%;
     margin: 30px auto 0;
-    padding: 10px;
-    background-color: white;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+}
+
+.header__container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #0f0;
+}
+
+.logo:active {
+    opacity: 0.7;
+}
+
+.logo__image {
+    height: 50px;
+    border: 1px solid #0f0;
+    margin-right: 10px;
+}
+
+.logo__title {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .form-control {
@@ -26,7 +57,45 @@ body {
     margin-bottom: 5px;
 }
 
-.form-control__selector {
+.form-control__input {
+    resize: vertical;
+}
+
+.form-control__selector{
+    cursor: pointer;
+}
+
+.form-control__selector,
+.form-control__input {
     padding: 5px;
+    border: 1px solid #000;
     border-radius: 3px;
+    background-color: #505050;
+    color: #fff;
+    outline-color: #0f0;
+}
+
+.form-control__selector:focus,
+.form-control__input:focus {
+    border-color: #0f0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-actions button {
+    padding: 8px 10px;
+    background-color: #505050;
+    color: #0f0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-actions button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
 }
