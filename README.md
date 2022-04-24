@@ -28,7 +28,7 @@ npm run build
 
 ## Usage
 
-### Cezar
+### Cezar cipher
 ```javascript
 import { Cezar } from './ecryption-methods/cezar.js';
 
